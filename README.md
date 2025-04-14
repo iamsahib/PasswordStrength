@@ -17,69 +17,70 @@ Target column: strength
 Features: password
 
 🧪 Technologies Used
-Python
-
-Pandas, Numpy
-
-Matplotlib, Seaborn (for EDA)
-
-Scikit-learn
+      Python
+      Pandas, Numpy
+      Matplotlib, Seaborn (for EDA)
+      Scikit-learn
 
 NLP (TF-IDF Vectorizer)
 
 🧭 Workflow
-Data Loading and Exploration
-
-Read CSV dataset.
-
-Visualized the distribution of password strengths.
+    Data Loading and Exploration
+    Read CSV dataset.
+    Visualized the distribution of password strengths.
 
 Data Cleaning
 
-Checked and handled missing/null values.
+  Checked and handled missing/null values.
 
-Mapped numerical labels (0,1,2) to Weak, Medium, Strong.
+  Mapped numerical labels (0,1,2) to Weak, Medium, Strong.
 
 Text Preprocessing
 
-Applied TF-IDF vectorization to transform password text into numerical features.
+  Applied TF-IDF vectorization to transform password text into numerical features.
 
 Model Building
 
-Split the data into training and test sets.
+  Split the data into training and test sets.
 
 Trained multiple classification models:
 
-Logistic Regression
+  Logistic Regression
 
-Random Forest
+  Random Forest
 
-Decision Tree
+  Decision Tree
 
 K-Nearest Neighbors
 
-Model Evaluation
+  Model Evaluation
 
 Compared model performance using accuracy score and classification report.
 
-Displayed confusion matrix for the best-performing model.
+  Displayed confusion matrix for the best-performing model.
 
 📊 Results
-Achieved high accuracy in predicting password strength using text-based features.
+  Achieved high accuracy in predicting password strength using text-based features.
 
 Random Forest Classifier performed best (you can update this if another model wins).
 
 ✅ Conclusion
-This project demonstrates how NLP techniques can be applied in security-related applications, such as password classification. Future improvements could include more advanced feature engineering or use of deep learning models.
-
-💡 Recommendations
-Try using n-grams in TF-IDF vectorizer to capture patterns like abc, 123, @!#.
-
-Evaluate using cross-validation instead of a single train-test split.
-
-You can explore LSTM models using Keras for sequential learning (optional advanced task).
-
-Add an interactive Streamlit app that lets users input a password and see the strength prediction.
+  This project demonstrates how NLP techniques can be applied in security-related applications, such as password classification. Future improvements could include more advanced feature          engineering or use of deep learning models.
 
 
+🔍 Key Insights
+  Imbalanced Classes
+  The dataset has more weak passwords than medium and strong ones, which can bias the model toward predicting the majority class.
+
+  Weak Password Patterns
+  Most weak passwords are short and predictable (e.g., "123456", "password", "abc123"), making them easier for models to classify accurately.
+
+  Strong Password Complexity
+  Strong passwords generally include a mix of uppercase, lowercase, numbers, and special characters, showing higher character diversity.
+
+  TF-IDF Effectiveness
+  The TF-IDF vectorizer helped effectively convert textual passwords into numerical features, enabling models to distinguish between different password strengths.
+
+  Model Performance
+  Random Forest outperformed other models in accuracy and class balance, while Logistic Regression and Decision Tree struggled slightly with medium and strong classes.
 
