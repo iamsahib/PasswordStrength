@@ -6,10 +6,13 @@
 This project aims to classify the strength of passwords (e.g., weak, medium, strong) using Natural Language Processing (NLP) techniques. By analyzing password text data and applying feature extraction (like TF-IDF) and machine learning models (Logistic Regression, Random Forest, etc.), we can predict the security level of a given password. This can be useful for improving authentication systems and user password guidelines.
 
 🛡️ Password Strength Classification using NLP
+
 📌 Objective
+
 To develop a machine learning model that predicts the strength of passwords based on their textual features using Natural Language Processing techniques.
 
 🔍 Dataset
+
 Contains a list of passwords labeled as Weak, Medium, or Strong.
 
 Target column: strength
@@ -60,11 +63,14 @@ Compared model performance using accuracy score and classification report.
   Displayed confusion matrix for the best-performing model.
 
 📊 Results
-  Achieved high accuracy in predicting password strength using text-based features.
 
-Random Forest Classifier performed best (you can update this if another model wins).
+
+  Achieved high accuracy in predicting password strength using text-based features.
+  Random Forest Classifier performed best (you can update this if another model wins).
 
 ✅ Conclusion
+
+
   This project demonstrates how NLP techniques can be applied in security-related applications, such as password classification. Future improvements could include more advanced feature          engineering or use of deep learning models.
 
 
